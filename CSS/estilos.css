@@ -1,0 +1,238 @@
+/* Dektop */
+@media only screen and (min-width: 600px) {
+    main {
+        /* Flex Box */
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 10px;    
+    }
+    #tituloPrincipal{
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px; 
+        font-size: 50px;
+        text-align: left;
+    }
+    nav a {
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        text-align: justify;
+        text-decoration: none;  
+        font-size: 1.2em;
+        letter-spacing: 3px;  
+    }
+    nav a:hover{
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        margin: 1em 0 ;    
+        font-size: 1.2em;
+        text-decoration: none;
+    }  
+    .navItem{
+        display: inline;
+        padding: 20px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    #servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        text-align: center;        
+    }
+    #logoimg{
+        height: 100px;
+    }
+    #portada{
+        height: 300px;
+        width: 350px;
+    }
+    #textoPortada h4 {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5em;        
+    }
+
+  }
+
+/* Mobile */
+ @media only screen and (max-width: 600px) {
+    main {
+        /* Flex Box */
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 10px;
+    }
+    #tituloPrincipal{
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px; 
+        font-size: 20px;
+        text-align: left;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a {
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        text-align: center;
+        text-decoration: none;  
+        font-size: 1.0em;
+        letter-spacing: 3px;  
+    }
+    nav a:hover{
+        color: rgb(105, 50, 168);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: justify; 
+        font-size: 1.2em;
+        text-decoration: none;
+    }  
+    .navItem{
+        display:block;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 2px solid blueviolet;
+    }
+    #servicios{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        margin: 20px;
+        text-align: center;
+    }
+    nav {
+        /*align-items: center;*/
+        text-align: center;
+
+    }
+    #navUl{
+        padding-left: 0;
+        margin-block-start: 0;
+    }
+    #logoimg{
+        height: 100px;
+    }
+    #portada{
+        height: 200px;
+        width: 250px;
+    }
+    #textoPortada h4 {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.0em;        
+    }
+
+}
+
+/* Por Seccion */
+body {
+    margin:0px;
+}
+header {
+    /* Flex Box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid blueviolet;
+    /* box model*/ 
+    padding:5px;    
+    background-image: linear-gradient(#54E683, #ffffff);
+}
+footer {
+    background-image: linear-gradient(#ffffff, #54E683);
+    padding:20px;
+    border-top: 2px solid blueviolet;
+}
+
+/* Por elemento */
+div p{
+    color:green;
+}
+p{
+    color:black !important;
+    width:100%;
+    letter-spacing: 3px;
+}
+li{
+    text-align: justify;
+    letter-spacing: 3px; 
+}
+h2{
+    color: rgb(105, 50, 168);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+}
+footer p {
+    color:brown;
+}
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#coaching p {
+    text-align: justify;
+}
+#grid_form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 10px;
+}
+
+/** Por Clase **/
+.portada{
+    text-align: center;
+}
+.subtitulo {
+    color: rgb(105, 50, 168);
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tagForm {
+    font-family: 'Short Stack', cursive;
+}
+.RedesSociales{
+    margin:10px;
+    width: 24px;
+    height: 24px;
+}
+.imgservicios{
+    border-radius: 4%;
+    width: 280px;
+    height: 180px;
+}
+.imgnosotros{
+    border-radius: 10%;
+    width: 380px;
+    height: 220px;
+    padding: 5px;
+}
+.formLabel{
+    text-align: left;
+}
+.servicioItem{
+    align-items: center;
+}
